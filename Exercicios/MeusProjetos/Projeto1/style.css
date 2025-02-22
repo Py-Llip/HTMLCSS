@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Anton&family=Italiana&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor0: #99AEBE;
+    --cor1: #010F22;
+    --cor2: #3C7798;
+    --cor3: #327AA7;
+    --cor4: #5C6269;
+    --font0: "Alumni Sans Pinstripe";
+    --font1: "none";
+}
+
+*{
+    font-family: var(--font0);
+    margin: 0;
+}
+
+body{
+    position: relative;
+    min-height: 120vh;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(45deg, var(--cor1), #052249);
+    padding: 5% 0;
+}
+
+header h1, header menu{
+    color: var(--cor0);
+}
+
+header h1{
+    text-align: center;
+    font-size: 5vw;
+}
+
+header menu{
+    position: absolute;
+    right: 5%;
+    top: 40%;
+    padding: 0;
+}
+
+header menu > div{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 73%;
+}
+
+header menu > div div{
+    position: fixed;
+    background-color: var(--cor4);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 75%;
+}
+
+header menu:hover > div{
+    display: block;
+}
+
+.material-symbols-outlined{
+    font-size: clamp(16px, 4vw, 30px)
+}
+
+main{
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: auto;
+    background-color: aliceblue;
+
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-image: linear-gradient(45deg, var(--cor1), #052249);
+    color: white;
+    text-align: center;
+    padding: 5vh 0;
+
+}

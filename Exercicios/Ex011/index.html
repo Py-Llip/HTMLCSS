@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Tente abrir esse site em vários dispositivos ou simplesmente aumente ou diminua o tamanho do seu navegador</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto-P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-M.png" type="image/png">
+        <img src="Imagens/foto-G.png" alt="Foto Grande">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="Midia/merry_go-silent_film_light-kevin_macleod.mp3" controls autoplay></audio>
+    <!--MP3 WAV OGG-->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="Midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="Midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="Midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reporduzir áudio.<a href="Midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>
