@@ -89,3 +89,11 @@ footer{
     padding: 5vh 0;
 
 }
+
+article h2{
+    text-align: center;
+    color: var(--cor1);
+    font-weight: lighter;
+    font-size: 10vw;
+
+}
