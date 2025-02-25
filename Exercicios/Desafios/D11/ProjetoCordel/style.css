@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Anton&family=Italiana&family=Passion+One:wght@400;700;900&family=Sigmar&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Anton&family=Italiana&family=League+Script&family=Passion+One:wght@400;700;900&family=Sigmar&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Tangerine:wght@400;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --font0: "Passion One";
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: "League Script";
+}
+
+*{
+    font-family: var(--font0);
+    margin: 0;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5% 0;
+    max-height: 150px;
+    margin-bottom: 5%;
+    
+}
+
+header > h1{
+    font-family: var(--font0);
+    font-weight: 100;
+    font-size: 12vw;
+}
+
+header > p{
+    font-family: var(--font1);
+
+}
+
+a{
+    text-decoration: none;
+    font-size: clamp(0px, 4vw, 40px);
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+article > p{
+    margin: 8%;
+    font-size: 4vw;
+    font-weight: bolder;
+    font-family: var(--font2);
+    line-height: 200%;
+
+}
+
+section#i1{
+    background-image: url('Imagens/flor-INVERTIDA.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+section{
+    position: relative;
+}
+
+section > p{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 4vw;
+}
