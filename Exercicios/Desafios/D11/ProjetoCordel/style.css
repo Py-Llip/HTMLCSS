@@ -61,6 +61,7 @@ section#i1{
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
+    background-position: left center;
 }
 
 section{
