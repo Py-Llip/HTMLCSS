@@ -56,16 +56,20 @@ article > p{
 }
 
 section#i1{
-    background-image: url('Imagens/flor-INVERTIDA.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: left center;
+    background-image: url('Imagens/flor-FULL.jpeg');
+
 }
 
 section{
+    background-color: white;
+    color: black;
     position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vw;
+    background-attachment: fixed;
+    background-position: center center;
+    box-shadow: inset 1vw 1vw 13px 0px rgba(0, 0, 0, 0.3);
 }
 
 section > p{
@@ -76,4 +80,21 @@ section > p{
     background-color: rgba(0, 0, 0, 0.3);
     color: white;
     font-size: 4vw;
+}
+
+section#i2{
+    background-image: url('Imagens/escrita-FULL.webp');
+}
+
+footer{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 2.5% 0;
+}
+
+footer > h4{
+    font-weight: normal;
+    font-family: var(--font1);
+    font-size: 3vw;
 }
