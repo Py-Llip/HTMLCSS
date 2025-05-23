@@ -157,9 +157,17 @@ div#dd0{
     margin-top: 65px;
     color:var(--cor5);
     margin-left: 100px;
+    line-height: 20px;
 }
 
 data strong{
     font-size: 3em;
     color: var(--cor1)
+}
+
+#dd0 data > p{
+    font-family: var(--font1);
+    text-align: end;
+    font-size: 1.2em;
+    
 }
