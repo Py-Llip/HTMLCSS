@@ -26,8 +26,7 @@
 header{
     position: relative;
     overflow: visible;
-    height: 40vh;
-    width: 100%;
+    height: 24vh;
     background-color: var(--cor6);
 }
 
@@ -38,13 +37,13 @@ header h1, h2{
 }
 
 header h1{
-    top: 20%;
+    top: 8%;
     font-family: var(--font1);
     font-size: 4em;
 }
 
 header h2{
-    top: 50%;
+    top: 60%;
     font-size: 1.2em;
     font-weight: 100;
     letter-spacing: 1.24em;
@@ -53,7 +52,7 @@ header h2{
 nav{
     position: absolute;
     left: 80%;
-    top: 15%;
+    top: 5%;
     z-index: 1;
 }
 nav .material-symbols-outlined{
@@ -97,6 +96,7 @@ nav #menu a{
 }
 
 main{
+    position: relative;
     background-color: #e8ecef;
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0% 65px);
     margin-top: -65px;
@@ -147,14 +147,14 @@ p strong{
 
 div#dd0{
     background-color: var(--cor6);
-    height: 200px;
-    margin-top: -100px;
+    height: 150px;
+    margin-top: -75px;
     clip-path: polygon(100% 50%, 100% 100%, 0% 100%, 0% 0%);
 }
 
 #dd0 data{
     display: inline-block;
-    margin-top: calc(100px - 1em);
+    margin-top: calc(75px - 1em);
     color:var(--cor5);
     margin-left: 100px;
     line-height: 20px;
@@ -173,8 +173,32 @@ data strong{
 }
 
 section#s0{
-    height: 200px;
-    background-color: #AF0C2C;
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0% 20px);
-    margin-top: -20px;
+    position: relative;
+    height: 100vh;
+    background-color: var(--cor6);
+    
+}
+
+#d1{
+    position: absolute;
+    height: calc(100% + 200px);
+    width: 30%;
+    clip-path: polygon(0 0, 70% 70%, 0% 100%);
+    margin-top: -200px;
+    background-color: var(--cor2);
+}
+
+#d1 > div{
+    background-color: var(--cor6);
+    height: 100%;
+    width: 50%;
+    clip-path: polygon(0 0, 70% 70%, 0% 100%);
+}
+
+div#tmp{
+    background-color: var(--cor6);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    
 }
