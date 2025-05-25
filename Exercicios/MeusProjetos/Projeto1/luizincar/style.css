@@ -23,14 +23,25 @@
     margin: 0;
     padding: 0;
 }
-header{
-    position: relative;
-    overflow: visible;
-    height: 24vh;
+
+body{
     background-color: var(--cor6);
 }
 
-header h1, h2{
+header{
+    position: relative;
+    overflow: visible;
+    height: 23.5vh;
+    background-color: var(--cor6);
+}
+
+h2{
+    font-family: var(--font2);
+    color: var(--cor5);
+    font-size: 2em;
+}
+
+header h1, header h2{
     position: absolute;
     left: 20px;
     color: var(--cor0);
@@ -43,6 +54,7 @@ header h1{
 }
 
 header h2{
+    font-family: var(--font0);
     top: 60%;
     font-size: 1.2em;
     font-weight: 100;
@@ -77,7 +89,6 @@ nav #menu{
     
 }
 
-
 nav:hover #menu{
     opacity: 1;
     visibility: visible;
@@ -97,14 +108,14 @@ nav #menu a{
 
 main{
     position: relative;
-    background-color: #e8ecef;
+    background-color: var(--cor6);
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0% 65px);
     margin-top: -65px;
 }
 
 #img1{
     position: relative;
-    background-image: url(imgs/carroeestrada2-FULL.png);
+    background-image: url(imgs/carroeestrada2-visível.jpeg);
     height: 75vh;
     background-size: cover;
     background-position: center center;
@@ -149,6 +160,7 @@ div#dd0{
     background-color: var(--cor6);
     height: 150px;
     margin-top: -75px;
+    margin-bottom: -1px;
     clip-path: polygon(100% 50%, 100% 100%, 0% 100%, 0% 0%);
 }
 
@@ -172,7 +184,15 @@ data strong{
     
 }
 
-section#s0{
+.borda{
+    height: 2px;
+    background-color: var(--cor0);
+    margin: 0 10%;
+    -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+}
+
+section#s1{
     position: relative;
     height: 100vh;
     background-color: var(--cor6);
@@ -184,7 +204,7 @@ section#s0{
     height: calc(100% + 200px);
     width: 30%;
     clip-path: polygon(0 0, 70% 70%, 0% 100%);
-    margin-top: -200px;
+    transform: translateY(-200px);
     background-color: var(--cor2);
 }
 
@@ -195,10 +215,17 @@ section#s0{
     clip-path: polygon(0 0, 70% 70%, 0% 100%);
 }
 
-div#tmp{
-    background-color: var(--cor6);
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    
+#s1 > h2{
+    text-align: center;
+}
+
+#s1 img{
+    position: relative;
+    width: 400px;
+    margin: 0 -100px;
+}
+
+#s1 .carros{
+    padding: 0 22%;
+    margin-top: 18%;
 }
