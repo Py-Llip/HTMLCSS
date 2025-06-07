@@ -34,10 +34,14 @@ body{
 }
 
 header{
-    position: relative;
+    position: fixed;
+    top: 0;
+    z-index: 10;
     overflow: visible;
     height: 23.5vh;
+    width: 100vw;
     background-color: var(--cor6);
+    clip-path: polygon(100% 0, 100% 70%, 0 100%, 0% 0%);
 }
 
 h2{
@@ -65,7 +69,7 @@ header h1, header h2{
 }
 
 header h1{
-    top: 8%;
+    top: 12%;
     font-family: var(--font1);
     font-size: 4em;
 }
@@ -79,10 +83,10 @@ header h2{
 }
 
 nav{
-    position: absolute;
+    position: fixed;
     left: 80%;
     top: 5%;
-    z-index: 1;
+    z-index: 10;
     width: 20%;
 }
 nav .material-symbols-outlined{
@@ -128,9 +132,8 @@ nav #menu a{
 
 main{
     position: relative;
-    background-color: var(--cor6);
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0% 65px);
-    margin-top: -65px;
+    background-color: var(--cor0);
+    margin-top: calc(23.5vh * (70 / 100));
 }
 
 #img1{
@@ -333,7 +336,7 @@ h4 + hr{
 
 #s2{
     position: relative;
-    height: 150vh;
+    height: 126vh;
     overflow: hidden;
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0% 65px);
     margin-top: -65px;
@@ -342,24 +345,24 @@ h4 + hr{
 
 .decorador#d5{
     background-color: var(--cor6);
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     
 }
 
 #s2 > img{
     position: absolute;
-    top: -155px;
+    top: -160px;
     left: calc(100% - 600px);
     width: 650px;
     z-index: 1;
-    transform: rotate(-110deg);
+    transform: rotate(-100deg);
 }
 
 .decorador#d6{
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     background-color: var(--cor7);
-    margin-top: -50vh;
-    clip-path: polygon(100% 0%, 100% 100%, 0 100%, 0% 50%);
+    margin-top: -14vh;
+    clip-path: polygon(100% 0%, 100% 100%, 0 100%, 0% 20%);
 }
