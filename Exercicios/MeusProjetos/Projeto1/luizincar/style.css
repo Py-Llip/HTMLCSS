@@ -62,6 +62,14 @@ h4{
     text-decoration: underline;
 }
 
+.borda{
+    height: 2px;
+    background-color: var(--cor0);
+    margin: 0 10%;
+    -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+}
+
 header h1, header h2{
     position: absolute;
     left: 20px;
@@ -85,7 +93,7 @@ header h2{
 nav{
     position: fixed;
     left: 80%;
-    top: 5%;
+    top: 6%;
     z-index: 10;
     width: 20%;
 }
@@ -132,7 +140,7 @@ nav #menu a{
 
 main{
     position: relative;
-    background-color: var(--cor0);
+    background-color: var(--cor6);
     margin-top: calc(23.5vh * (70 / 100));
 }
 
@@ -206,14 +214,6 @@ data strong{
     font-size: 1.2em;
     color: var(--cor7)
     
-}
-
-.borda{
-    height: 2px;
-    background-color: var(--cor0);
-    margin: 0 10%;
-    -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
-    mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
 }
 
 section#s1{
@@ -343,7 +343,29 @@ h4 + hr{
     z-index: 1;
 }
 
+#s2 h2{
+    color: var(--cor1);
+    text-align: left;
+    padding-left: 5%;
+    padding-top: 10%;
+}
+
+#s2 h3{
+    font-size: 1.2em;
+    padding-left: 5%;
+    padding-top: 1%;
+    font-weight: 600;
+}
+
+#s2 p{
+    padding-right: 60%;
+    padding-left: 5%;
+    text-align: left;
+    margin-top: 1%;
+}
+
 .decorador#d5{
+    position: relative;
     background-color: var(--cor6);
     height: 70vh;
     width: 100%;
@@ -352,17 +374,35 @@ h4 + hr{
 
 #s2 > img{
     position: absolute;
-    top: -160px;
+    top: -122px;
     left: calc(100% - 600px);
     width: 650px;
     z-index: 1;
-    transform: rotate(-100deg);
+    transform: rotate(-95deg);
 }
 
 .decorador#d6{
+    position: relative;
     height: 70vh;
     width: 100%;
     background-color: var(--cor7);
     margin-top: -14vh;
-    clip-path: polygon(100% 0%, 100% 100%, 0 100%, 0% 20%);
+    clip-path: polygon(100% 0%, 100% 100%, 0 80%, 0% 20%);
+}
+
+#d6 > h2{
+    position: absolute;
+    top: 60px;
+    font-family: var(--font0);
+    color: var(--cor6);
+    font-style: italic;
+    font-size: 2em;         
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 20px white;
+    
+}
+
+#d6 .borda{
+    position: absolute;
+    top: 100px;
 }
