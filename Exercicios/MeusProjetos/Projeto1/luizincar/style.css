@@ -62,6 +62,11 @@ h4{
     text-decoration: underline;
 }
 
+button{
+    /*all: unset;*/
+    /*display: inline-block;*/
+}
+
 .borda{
     height: 2px;
     background-color: var(--cor0);
@@ -96,12 +101,15 @@ nav{
     top: 6%;
     z-index: 10;
     width: 20%;
+    
 }
+
 nav .material-symbols-outlined{
     display: inline-block;
     position: absolute;
     font-size: 2em;
     color: var(--cor0);
+    cursor: pointer;
 }
 
 nav #menu{
@@ -146,10 +154,10 @@ main{
 
 #img1{
     position: relative;
-    background-image: url(imgs/carroeestrada2-visível.jpeg);
+    background-image: url(imgs/carro_ferrari_4.jpg);
     height: 75vh;
-    background-size: cover;
-    background-position: center center;
+    background-size: contain;
+    background-position: center 50%;
 }
 
 .decorador{
@@ -397,12 +405,78 @@ h4 + hr{
     color: var(--cor6);
     font-style: italic;
     font-size: 2em;         
-    letter-spacing: 0.1em;
-    text-shadow: 0 0 20px white;
+    letter-spacing: 0.2em;
+    text-shadow:0 0 10px white,
+                0 0 20px white;
     
 }
 
 #d6 .borda{
     position: absolute;
     top: 100px;
+}
+
+section#s3{
+    position: relative;
+    height: 75vh;
+    z-index: 0;
+}
+
+#s3 h2{
+    font-size: 4em;
+    text-indent: 0.5em;
+    color: var(--cor7);
+}
+
+#s3 .movel-venda{
+    position: relative;
+    display: inline-block;
+    margin:5% 5%;
+}
+
+#s3 img{
+    position: absolute;
+    width: 300px;
+    z-index: -1;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.movel-venda .info{
+    margin-top: 66px;
+    background-color: var(--cor3);
+    color: var(--cor6);
+    width: 290px;
+    height: 110px;
+    border-radius: 0 0 20px 20px;
+    padding-left: 10px;
+}
+
+#s3 h3{
+    position: relative;
+    font-size: 2em;
+    color: var(--cor0)
+}
+
+#s3 button{
+    background-color: var(--cor7);
+    padding: 20px 15px;
+    width: 280px;
+    height: 60px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    font-size: 1em;
+    color: white;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px var(--cor0), 0 0 5px var(--cor0);
+    text-transform: uppercase;
+    font-family: var(--font2);
+    text-shadow: 2px 0px var(--cor0);
+
+}
+
+#s3 button:hover{
+    background-color: var(--cor0);
 }
