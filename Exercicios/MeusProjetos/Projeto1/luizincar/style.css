@@ -131,13 +131,13 @@ nav #menu{
     width: 80%;
 }
 
-.material-symbols-outlined:hover + #menu, #menu:hover{
+nav .material-symbols-outlined:hover + #menu, #menu:hover{
     opacity: 1;
     visibility: visible;
     max-height: 66vh;
 }
 
-.material-symbols-outlined:hover, nav{
+nav .material-symbols-outlined:hover, nav{
     height: calc(66vh + 40px);
 }
 
@@ -344,7 +344,6 @@ h4 + hr{
 
 #s2{
     position: relative;
-    height: 126vh;
     overflow: hidden;
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0% 65px);
     margin-top: -65px;
@@ -391,7 +390,7 @@ h4 + hr{
 
 .decorador#d6{
     position: relative;
-    height: 70vh;
+    height: 35vh;
     width: 100%;
     background-color: var(--cor7);
     margin-top: -14vh;
@@ -399,8 +398,9 @@ h4 + hr{
 }
 
 #d6 > h2{
+    padding-left: 10px;
     position: absolute;
-    top: 60px;
+    top: calc(-14vh + 20%);
     font-family: var(--font0);
     color: var(--cor6);
     font-style: italic;
@@ -418,28 +418,31 @@ h4 + hr{
 
 section#s3{
     position: relative;
-    height: 75vh;
+    height: 120vh;
     z-index: 0;
+    padding-top: 50px;
 }
 
 #s3 h2{
     font-size: 4em;
     text-indent: 0.5em;
-    color: var(--cor7);
+    color: var(--cor2);
 }
 
 #s3 .movel-venda{
     position: relative;
     display: inline-block;
-    margin:5% 5%;
+    margin: 10% 5% 5% 5%;
+
 }
 
 #s3 img{
     position: absolute;
     width: 300px;
     z-index: -1;
-    border-radius: 20px;
+    border-top-right-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--cor0);
 }
 
 .movel-venda .info{
@@ -448,7 +451,6 @@ section#s3{
     color: var(--cor6);
     width: 290px;
     height: 110px;
-    border-radius: 0 0 20px 20px;
     padding-left: 10px;
 }
 
@@ -460,12 +462,11 @@ section#s3{
 
 #s3 button{
     background-color: var(--cor7);
-    padding: 20px 15px;
-    width: 280px;
-    height: 60px;
+    width: calc(100% + 4px);
+    height: 80px;
     text-align: center;
     cursor: pointer;
-    border-radius: 20px;
+    border-bottom-left-radius: 20px;
     border: none;
     font-size: 1em;
     color: white;
@@ -479,4 +480,20 @@ section#s3{
 
 #s3 button:hover{
     background-color: var(--cor0);
+}
+
+#s3 .material-symbols-outlined{
+    position: absolute;
+    top: 95vh;
+    left: 45%;
+    font-size: 8em;
+    color: var(--cor2);
+    transition: padding-top 0.4s ease, text-shadow 1s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+#s3 .material-symbols-outlined:hover{
+    padding-top: 25px;
+    text-shadow: 0 0 10px var(--cor0)/*, 0 0 40px var(--cor0), 0 0 60px var(--cor0), 0 0 60px var(--cor0)*/;
+    color: var(--cor0);
 }
