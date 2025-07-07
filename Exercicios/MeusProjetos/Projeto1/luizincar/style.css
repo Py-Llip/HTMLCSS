@@ -447,6 +447,7 @@ section#s3{
 
 .movel-venda .info{
     margin-top: 66px;
+    margin-left: 2px;
     background-color: var(--cor3);
     color: var(--cor6);
     width: 290px;
@@ -462,7 +463,7 @@ section#s3{
 
 #s3 button{
     background-color: var(--cor7);
-    width: calc(100% + 4px);
+    width: calc(100% + 2px);
     height: 80px;
     text-align: center;
     cursor: pointer;
