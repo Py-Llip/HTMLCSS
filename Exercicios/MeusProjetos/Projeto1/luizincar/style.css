@@ -498,3 +498,48 @@ section#s3{
     text-shadow: 0 0 10px var(--cor0)/*, 0 0 40px var(--cor0), 0 0 60px var(--cor0), 0 0 60px var(--cor0)*/;
     color: var(--cor0);
 }
+
+footer{
+    position: relative;
+    background-color: var(--cor7);
+    height: 200px;
+    color: var(--cor6)
+}
+
+footer > #termos{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    transform-origin: center;
+    font-size: 1.3em;
+}
+
+p#motivacao{
+    position: absolute;
+    right: 58%;
+    top: 3em;
+    width: 100%;
+    transform: translateX(50%);
+    text-align: center;
+}
+
+p#infoempresa{
+    position: absolute;
+    bottom: 30%;
+    left: 1em;
+}
+
+footer strong{
+    color: var(--cor6)
+}
+
+footer h3{
+    position: absolute;
+    padding: 0;
+    color: var(--cor0);
+    font-size: 2em;
+    top: 0;
+    transform: translateX(50%);
+    right: 50%;
+}
