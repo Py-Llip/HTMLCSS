@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: Raleway;
+}
+
+header{
+    text-align: center;
+    height: 200px;
+}
+
+header > a > img{
+    margin-bottom: -20px;
+    margin-top: -30px;
+}
+
+header > nav > a, a:visited{
+    margin: 0 2vw;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+header > nav > a:hover{
+    color: rgb(43, 43, 43);
+    transform: scale(1.1);
+    
+}
+
+hr{
+    border: none;
+    height: 2px;
+    /*background-color: rgb(228, 228, 228);*/
+    background: radial-gradient(circle, rgb(221, 221, 221), transparent 120%);
+
+}
+
+#search{
+    position: relative;
+    border: 2px solid rgb(228, 228, 228);
+    border-radius: 5px;
+    padding-left: 2%;
+    box-shadow: 0px 0px 5px 2px rgb(221, 221, 221);
+
+}
+
+#search i{
+    position: absolute;
+    left: 95%;
+    top: 20%;
+    color: rgb(110, 110, 110);
+    /*transform: translateY(2px);*/
+    
+}
+
+#nome_empresa{
+    text-align: center;
+    font-size: 4em;
+    font-weight: 100;
+}
+
+#imagem01{
+    background-image: url(imagens/001.jpg);
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: white;
+    margin: 0 15%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px rgb(221, 221, 221);
+    
+}
+
+h2{
+    text-align: center;
+}
+
+section p{
+    margin: 0 15%;
+    text-align: center;
+}
