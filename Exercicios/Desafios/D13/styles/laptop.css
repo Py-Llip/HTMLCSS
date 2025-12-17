@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+
+main {
+    position: relative;
+    margin: 0 10vw;
+    width: 80vw;
+    background-color: white;
+    margin-top: 25vh;
+    border-radius: 10px 10px 10px 10px;
+    height: 60vh;
+}
+.box {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+}
+
+form {
+    width: 40vw;
+    padding-top: 7vh;
+
+}
+
+#emailandpass input {
+    height: 1.4em;
+    border-radius: 4px;
+    margin-bottom: 0.6em
+    
+}
+
+#email, #pass {
+    margin: 20px 0;
+    background-color:#44A2EB;
+    width: calc(100%);
+}
+
+#entrada, #senha-perdida {
+    margin: 20px auto;
+}
+
+main h1, main p {
+    position: absolute;
+    top: -25vh;
+    transform: translateX(-50%);
+    left: 50%
+}
+
+main p {
+    transform: translateX(-62%);
+    top: -15vh; 
+}
