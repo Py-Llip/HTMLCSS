@@ -1,0 +1,2 @@
+flex-basis: auto******* a largura do elemento é dado através do tamanho do seu conteúdo
+

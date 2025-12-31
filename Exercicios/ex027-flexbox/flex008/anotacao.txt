@@ -1,0 +1,3 @@
+todo item em flexbox vai ter *order: 0*
+
+align-self, para o item, para a linha transversal (cross-axis); *auto* herda do alinhamento vertical do contêiner pai
