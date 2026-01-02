@@ -1,0 +1,9 @@
+flex: ordem é flex-grow, flex-shrink e flex-basis.
+
+flex: 0 1 auto; é a config padrão == que flex: initial;
+
+flex: 0 0 auto; == none
+
+flex: 1 1 auto; == auto
+
+flex: 3; == flex-grow: 3; == flex: 3 1 auto;
