@@ -81,7 +81,7 @@ main p {
     padding: 15px;
 }
 
-@media  screen and (min-width: 450px) {
+@media  screen and (min-width: 580px) {
 
     header {
         display: flex;
@@ -95,6 +95,7 @@ main p {
     header h1 {
         text-align: left;
         padding-left: 10px;
+        padding-bottom: 0;
         margin-right: 50px
     }
 
