@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConteúdoFlex</title>
+    <style>
+        @charset "UTF-8";
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1, h2, p {
+            padding: 10px;
+        }
+
+        section.flexivel {
+            background-color: lightgray;
+        }
+
+        article {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        article#i1 {
+            flex-wrap: wrap-reverse;
+        }
+
+        div.texto {
+            flex: 1 1 500px;
+        }
+
+        div.midia {
+            /*border: 2px dotted black;*/
+            flex: 0 1 500px;
+            height: 300px;
+            margin: auto;
+        }
+
+        div.midia#i2 {
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="normal">
+        <h1>Exemplo de conteúdo flexível</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quam illo officiis impedit perspiciatis possimus voluptatum illum laudantium nesciunt. Est assumenda magnam unde qui? Perspiciatis blanditiis impedit debitis corrupti repellendus!</p>
+    </header>
+    <main>
+        <section class="flexivel">
+            <article id="i1">
+                <div class="texto">
+                    <h2>Elemento Media -> Text</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, ex ad impedit fugiat harum vel dignissimos nisi maiores quae quaerat corporis aut dolorem vero architecto numquam in voluptas exercitationem? Saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem adipisci non exercitationem voluptatum optio, nihil eveniet voluptate laborum nesciunt quis nostrum aspernatur odit ipsum laboriosam? Ex accusamus cum placeat vitae?</p>
+                </div>
+                <div class="midia">
+                    <img src="https://www.divera.com.br/storage/app/uploads/public/642/b3d/658/thumb_229_730_453_0_0_crop.png" alt="imagem de site" width="100%">
+                </div>
+            </article>
+            <article id="i2">
+                <div class="texto">
+                    <h2>Elemento Text -> Media</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam mollitia ad numquam adipisci perferendis itaque dicta voluptatem laudantium sequi cum, sed esse atque sit eum quibusdam! Maiores vero voluptatibus eaque!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, culpa. Minus, est dolore animi voluptas, corrupti ea accusantium cupiditate veritatis ut tempore recusandae quia eaque soluta consequatur dicta placeat sed.</p>
+                </div>
+                <div class="midia" id="i2">
+                    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/VBGMnFHRqcY?si=UNDjf96DpbCkCm8J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </article>
+        </section>
+        <section class="normal">
+            <h2>Conteúdo normal</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laborum minima, delectus voluptatum dicta eaque unde et temporibus quasi ea? Deleniti laudantium illum architecto fugit explicabo cupiditate tempore? Optio, porro! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae temporibus enim reiciendis labore distinctio ab perspiciatis doloremque alias quam expedita impedit, soluta nostrum nobis architecto consectetur maxime consequatur. Rerum, aliquam.</p>
+        </section>
+
+    </main>
+</body>
+</html>
