@@ -15,13 +15,16 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5em;
         }
 
         h1, h2, p {
             padding: 10px;
         }
 
-        section.flexivel {
+        section.flex-content {
+            display: flex;
+            flex-flow: column nowrap;
             background-color: lightgray;
         }
 
@@ -34,19 +37,24 @@
             flex-wrap: wrap-reverse;
         }
 
-        div.texto {
-            flex: 1 1 500px;
+        div.text {
+            flex: 1 1 300px;
         }
 
-        div.midia {
-            /*border: 2px dotted black;*/
-            flex: 0 1 500px;
-            height: 300px;
+        div.media {
+            flex: 1 0 400px;
+
+        }
+
+        div.media#i1 img{
             margin: auto;
+            padding: 50px;
         }
 
-        div.midia#i2 {
-            padding: 20px;
+        div.media#i2 iframe {
+            display: block;
+            margin: auto;
+            width: 90%
         }
 
     </style>
@@ -57,24 +65,24 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quam illo officiis impedit perspiciatis possimus voluptatum illum laudantium nesciunt. Est assumenda magnam unde qui? Perspiciatis blanditiis impedit debitis corrupti repellendus!</p>
     </header>
     <main>
-        <section class="flexivel">
+        <section class="flex-content">
             <article id="i1">
-                <div class="texto">
+                <div class="text">
                     <h2>Elemento Media -> Text</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, ex ad impedit fugiat harum vel dignissimos nisi maiores quae quaerat corporis aut dolorem vero architecto numquam in voluptas exercitationem? Saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem adipisci non exercitationem voluptatum optio, nihil eveniet voluptate laborum nesciunt quis nostrum aspernatur odit ipsum laboriosam? Ex accusamus cum placeat vitae?</p>
                 </div>
-                <div class="midia">
+                <div class="media" id="i1">
                     <img src="https://www.divera.com.br/storage/app/uploads/public/642/b3d/658/thumb_229_730_453_0_0_crop.png" alt="imagem de site" width="100%">
                 </div>
             </article>
             <article id="i2">
-                <div class="texto">
+                <div class="text">
                     <h2>Elemento Text -> Media</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam mollitia ad numquam adipisci perferendis itaque dicta voluptatem laudantium sequi cum, sed esse atque sit eum quibusdam! Maiores vero voluptatibus eaque!</p>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, culpa. Minus, est dolore animi voluptas, corrupti ea accusantium cupiditate veritatis ut tempore recusandae quia eaque soluta consequatur dicta placeat sed.</p>
                 </div>
-                <div class="midia" id="i2">
-                    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/VBGMnFHRqcY?si=UNDjf96DpbCkCm8J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="media" id="i2">
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VBGMnFHRqcY?si=UNDjf96DpbCkCm8J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </article>
         </section>
