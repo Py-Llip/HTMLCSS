@@ -1,0 +1,7 @@
+    o que é Grid Layout?
+"CSS Grid layout é um sistema para criação de layout baseado em uma grade bidimensional e otimizada para design de interfaces de usuário. Nesse modelo de grade, os elementos-filhos do contêiner que defina a grade podem ser posicionados livremente em espaços criados na estrutura, quer ela tenha sido definida com suas dimensões flexíveis ou fixas." W3C - fonte
+
+--
+
+    A anatomia de um Grid
+--> img_anatomia
