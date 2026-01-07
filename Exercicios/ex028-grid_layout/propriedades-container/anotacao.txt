@@ -1,0 +1,11 @@
+Propriedades de container do Grid Layout:
+    >diplay | imgs 1-2
+        vgrid --- vira um grid container e os itens viram grid-items
+
+    >grid-template-columns | imgs 3-4
+
+    >grid-template-rows | imgs 5-6 
+
+    >grid-gap | imgs 7
+
+
