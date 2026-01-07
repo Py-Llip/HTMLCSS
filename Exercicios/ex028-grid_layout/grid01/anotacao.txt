@@ -6,6 +6,6 @@ Propriedades de container do Grid Layout:
 
     >grid-template-rows | imgs 5-6 
 
-    >grid-gap | imgs 7
+    >gap --------- (grid-gap foi depressiado) | imgs 7
 
 
