@@ -1,0 +1,20 @@
+Propriedades de container do Grid Layout
+parte 2:
+>align-items
+    alinhamento vertical
+    padrão: stretch;
+    img: 00
+>justify-items
+    alinhamento horizontal
+    padrão: stretch;
+    img: 01
+>align-content
+    alinhamento vertical
+    padrão: stretch;
+    img: 02
+>justify-content
+    alinhamento horizontal
+    padrão: start;
+    img: 03
+
+**Items: para cada item / Content: para todos os items (conteúdo)
