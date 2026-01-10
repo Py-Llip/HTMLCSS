@@ -14,7 +14,7 @@ parte 2:
     img: 02
 >justify-content
     alinhamento horizontal
-    padrão: start;
+    padrão: stretch;
     img: 03
 
 **Items: para cada item / Content: para todos os items (conteúdo)
