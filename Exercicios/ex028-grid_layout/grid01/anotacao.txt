@@ -1,4 +1,5 @@
 Propriedades de container do Grid Layout:
+img00
     >diplay | imgs 1-2
         vgrid --- vira um grid container e os itens viram grid-items
 

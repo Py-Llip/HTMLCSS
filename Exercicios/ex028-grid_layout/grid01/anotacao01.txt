@@ -1,5 +1,6 @@
 Propriedades de container do Grid Layout
 parte 2:
+img01
 >align-items
     alinhamento vertical
     padrão: stretch;

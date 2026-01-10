@@ -1,0 +1,16 @@
+Propriedades de container do Grid Layout
+Parte 3:
+img02
+>grid-auto-row ---- grid implicito
+    img 00
+>grid-auto-column ---- grid implicito
+    img 01
+>place-itens
+    img 02
+    vai configurar de forma simplificada os items (justify, align)
+>place-content
+    img 02
+    vai configurar de forma simplificada os contents (justify, align)
+>grid-template
+    img 02
+    vai configurar de forma simplificada os grids explicitos (grid-template-row, grid-template-column)
