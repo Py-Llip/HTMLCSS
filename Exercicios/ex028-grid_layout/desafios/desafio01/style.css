@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#site {
+    height: 100vh;
+    display: grid;
+    /*background-color: aquamarine;*/
+    grid-template: 100px 50px 1fr 50px / 1fr 150px;
+    gap: 10px;
+    
+}
+
+.items {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+header {
+    grid-area: 1 / 1 / 2 / -1;
+}
+
+nav {
+    grid-column-end: span 2;
+}
+
+main {
+    grid-area: 3 / 1 / 4 / 1;
+}
+
+footer {
+    grid-column-end: span 2;
+}
