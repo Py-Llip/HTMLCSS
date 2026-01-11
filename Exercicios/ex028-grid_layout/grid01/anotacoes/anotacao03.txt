@@ -1,0 +1,10 @@
+Propriedades de container para Grid:
+Parte 4:
+img03
+>função repeat()
+    img00
+>unidade fraction
+    img01-03
+    **Use fraction no lugar do auto
+
+
