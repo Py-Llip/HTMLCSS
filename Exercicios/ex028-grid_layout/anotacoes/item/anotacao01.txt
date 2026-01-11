@@ -1,0 +1,15 @@
+Propriedades para itens no Grid Layout
+parte 2
+img01
+>span
+    faz a expansão
+    img00
+>grid-row
+    simplifica com os grid-row start e end
+    ex: grid-row: 1 / span 3;
+>grid-column
+    simplifica com os grid-column start e end
+>grid-area
+    img01
+    simplifica os grid-row r column
+    ordem: grids row-start column-start row-end column-end
