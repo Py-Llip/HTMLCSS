@@ -1,6 +1,8 @@
 Propriedades de container do Grid Layout
 Parte 3:
 img02
+>grid-auto-flow
+    define a direcao dos grid implicitos
 >grid-auto-row ---- grid implicito
     img 00
 >grid-auto-column ---- grid implicito
