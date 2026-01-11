@@ -1,0 +1,11 @@
+Propriedades de itens para Grids
+parte 1
+img00
+>grid-row-start
+    img01
+>grid-row-end
+    img01
+>grid-column-start
+    img01
+>grid-column-end
+    img01
